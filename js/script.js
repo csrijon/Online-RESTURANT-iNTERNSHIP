@@ -7,16 +7,6 @@ const allfood = document.querySelector(".all-food");
 const promocards = document.querySelectorAll(".promo-card");
 
 
-// our menu 
-
-$(window).scroll(function () {
-    if ($(this).scrollTop() > 45) {
-        $('.navbar').addClass('sticky-top shadow-sm');
-    } else {
-        $('.navbar').removeClass('sticky-top shadow-sm');
-    }
-});
-
 
 if (chaifood && promocards) {
     chaifood.addEventListener("click", (e) => {
@@ -78,4 +68,3 @@ if (allfood && promocards) {
 }else{
     console.log("all food nehi hai")
 }
-// our menu end 
