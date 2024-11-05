@@ -1,4 +1,4 @@
-new WOW().init();
+
 
 const chaifood = document.querySelector(".chai-food");
 const pizzafood = document.querySelector(".pizza-food");
@@ -68,3 +68,16 @@ if (allfood && promocards) {
 }else{
     console.log("all food nehi hai")
 }
+
+// Sticky Navbar
+window.addEventListener('scroll', function () {
+    // Initialize WOW.js animations if needed
+    new WOW().init();
+
+    if (window.scrollY > 45) {
+        document.querySelector('.navbar').classList.add('sticky-top', 'shadow-sm');
+    } else {
+        document.querySelector('.navbar').classList.remove('sticky-top', 'shadow-sm');
+    }
+});
+
