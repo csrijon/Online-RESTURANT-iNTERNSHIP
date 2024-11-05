@@ -72,7 +72,6 @@ if (allfood && promocards) {
 // Sticky Navbar
 window.addEventListener('scroll', function () {
     // Initialize WOW.js animations if needed
-    new WOW().init();
 
     if (window.scrollY > 45) {
         document.querySelector('.navbar').classList.add('sticky-top', 'shadow-sm');
@@ -81,3 +80,6 @@ window.addEventListener('scroll', function () {
     }
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    new WOW().init();
+});
