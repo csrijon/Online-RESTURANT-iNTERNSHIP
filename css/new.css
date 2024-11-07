@@ -150,7 +150,7 @@
     display: inline-flex;
     align-items: center;
     padding: 0.5rem 1rem;
-    background-color: #ff6347;
+    background-color: #FEA116;
     color: #ffffff;
     border-radius: 5px;
     text-decoration: none;
@@ -159,7 +159,7 @@
 }
 
 .promo-button:hover {
-    background-color: #e55340;
+    background-color:#FEA116;
 }
 
 .promo-button .cart-icon {
@@ -195,7 +195,7 @@
     margin: 0 auto;
     padding: 20px;
     border-radius: 10px;
-    background-color: #f9f9f9;
+    /* background-color: #f9f9f9; */
 }
 .tabletext {
     text-align: center;
@@ -223,7 +223,7 @@
   }
   
   .form:focus {
-    border-color: #0056b3;
+    border-color:#FEA116;
     outline: none;
   }
   
@@ -264,4 +264,18 @@
     font-weight: 800;
     line-height: 1.2;
     color: #0F172B;
+}
+.footer-top{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+.middle{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 3px;   
+}
+.middle a{
+    text-decoration: none;
 }
