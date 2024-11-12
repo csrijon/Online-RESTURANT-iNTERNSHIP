@@ -1,5 +1,3 @@
-
-
 const chaifood = document.querySelector(".chai-food");
 const pizzafood = document.querySelector(".pizza-food");
 const burgerfood = document.querySelector(".burger-food");
@@ -83,3 +81,47 @@ window.addEventListener('scroll', function () {
 document.addEventListener("DOMContentLoaded", function() {
     new WOW().init();
 });
+
+const chefs = [
+    {
+      imgSrc: "/image/Chefs.jpg",
+      name1: "Srijon Chowdhury.",
+      name2: "CEO, Co-Founder."
+    },
+    {
+      imgSrc: "/image/Chefs.jpg",
+      name1: "Srijon Chowdhury",
+      name2: "Master Chefs."
+    },
+    {
+        imgSrc: "/image/Chefs.jpg",
+        name1: "Srijon Chowdhury.",
+        name2: "Master Chefs."
+    },
+    {
+        imgSrc: "/image/Chefs.jpg",
+        name1: "Srijon Chowdhury.",
+        name2: "Master."
+      }
+
+  ];
+
+  const teamsmember = document.querySelector(".teamsmember")
+  let delay= 0.1;
+
+  chefs.forEach(chef => {
+    const chefname = document.createElement("div")
+    chefname.classList.add("chefsnamecard","wow","fadeInUp")
+    chefname.setAttribute("data-wow-delay",`${delay}s`); 
+    delay= delay+0.1;
+    chefname.innerHTML = `
+    <div class="chefsimg">
+      <img src="${chef.imgSrc}" alt="Chef Image">
+    </div>
+    <div class="chefname">
+      <p class ="bolder">${chef.name1}</p>
+      <p>${chef.name2}</p>
+    </div>`
+  teamsmember.appendChild(chefname)
+    
+  });
